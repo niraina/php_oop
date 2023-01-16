@@ -3,20 +3,17 @@
 
     //On instancie le compte
 
-    $compte1 = new Compte;
+    $compte1 = new Compte("Ben", 200);
 
-    // On ecrit dans compte1
-    $compte1->titulaire = "Jhon";
-    $compte1->solde = 200;
+    // On dépose 100
 
+    $compte1->deposer(100);
+
+    $compte1->retirer(50);
     var_dump($compte1);
 
-    $compte2 = new Compte;
+    
 
-    $compte2->titulaire = "Deo";
-    $compte2->solde = 100.85;
-
-    var_dump($compte2);
 
 ?>
 <!DOCTYPE html>
@@ -28,6 +25,7 @@
     <title>Document</title>
 </head>
 <body>
+    <p><?= $compte1->voirSolde(); ?></p>
     <script src="app.js"></script>
 </body>
 </html>

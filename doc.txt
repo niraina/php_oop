@@ -1,0 +1,5 @@
+first commit 
+Délcaler un objet Compte
+Ajouter les propiété titulaire et solde
+Instancié un objet 
+Definir les valeur des propiété
